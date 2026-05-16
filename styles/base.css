@@ -8,7 +8,7 @@
     --header-background-color: navy;
     --main-background-color: white;
     --footer-background-color: navy;
-    --secondary-background-color: lightblue;
+    --secondary-background-color: skyblue;
 }
 
 /* =========================================================
@@ -29,6 +29,10 @@ ul {
     list-style: none;
 }
 
+a {
+    color: var(--primary-text-color)
+}
+
 a:link {
     text-decoration: none;
     font-weight: 700;
@@ -36,6 +40,16 @@ a:link {
 
 a:visited {
     color: inherit;
+}
+
+.header-nav-list a, .card-nav-list a {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.header-nav-list a:hover, .card-nav-list a:hover {
+    transform: scale(1.1);
+    color: var(--secondary-text-color);
 }
 
 h1 {
@@ -80,7 +94,7 @@ header {
 .header-nav-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* --- About Me Section --- */
@@ -175,6 +189,7 @@ header {
     gap: 1rem;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px lightslategray;
 }
 
 .card-1 h2,
