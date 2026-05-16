@@ -5,27 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Jacob'm Aniterea</title>
     <meta name="description"
-      content="Web page by Jacob'm Aniterea for WDD131 - Dynamic Web Fundamental. Brief summary about myself including personal interests and background.">
+      content="Jacob'm Aniterea | WDD131 - Dynamic Web Fundamentals. About me, my background, interests, and helpful web developer resources.">
     <meta name="author" content="Jacob'm Aniterea">
     <link rel="stylesheet" href="styles/base.css">
-    <script></script>
+    <script src="getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="nav-spacing">
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="trips.html">TRIPS</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main class="main-grid">
+        <h1>Jacob'm Aniterea</h1>
+        <section class="card-1">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>My name is Jacob'm Aniterea and I am enrolled in the Bachelor of Software Development program. I have always had an interest in computer technology so it is my goal to become a software engineer and to work for a major tech company like Google, Apple, or Microsoft. I was born and raised in Auckland, New Zealand however I now call Australia home where I have lived for the past 10 years.</p>
+                <img src="images/jacob-aniterea-profile-photo.png" alt="Profile photo of Jacob'm Aniterea">
+            </div>
+            <div class="about-western-australia">
+                <h3>Western Australia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, perferendis, suscipit accusantium, ad necessitatibus dolore illo iure distinctio atque iusto repellat consectetur recusandae modi ipsa vero commodi soluta! Maxime quas fugit temporibus iste qui asperiores explicabo deserunt perferendis? Alias adipisci eum amet et ipsum odio tenetur! Aut beatae architecto corporis?</p>
+                <figure>
+                    <img src="images/western-australia-flag.jpg" alt="Flag of Western Australia">
+                    <figcaption>Flag of Western Australia</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="card-2">
+            <h2>Web Dev Resources</h2>
+                <nav class="card-nav">
+                    <ul class="card-nav-list">
+                        <li><a href="https://dev.to/">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                        <li><a href="https://www.w3schools.com/">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com/">Udemy</a></li>
+                        <li><a href="https://picsum.photos/">Lorem Picsum Placeholder</a></li>
+                    </ul>
+                </nav>
+        </section>
     </main>
     <footer>
-
+        <p>©<span id="currentyear"></span> 2026 | Jacob'm Aniterea | Australia</span></p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
 </body>
 </html>
