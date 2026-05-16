@@ -43,6 +43,10 @@ a:visited {
     color: inherit;
 }
 
+header, footer {
+    background-color: var(--header-background-color);
+    min-width: 450px;
+}
 .header-nav-list a, .card-nav-list a {
     display: inline-block;
     transition: transform 0.1s ease, color 0.1s ease;
@@ -81,11 +85,6 @@ h1 {
 
 .card-nav-list a:hover {
     text-decoration: wavy;
-}
-
-header {
-    background-color: var(--header-background-color);
-    min-width: 450px;
 }
 
 .header-nav {
@@ -208,9 +207,7 @@ header {
    ========================================================= */
 
    footer {
-    background-color: var(--footer-background-color);
     color: var(--secondary-text-color);
     text-align: center;
     padding: 1rem 0;
-    min-width: 450px;
 }
