@@ -79,14 +79,13 @@ nav a, .web-dev-list a {
     display: inline-block;
     transition: transform 0.2s ease, color 0.2s ease;
     border-radius: 3px;
-    padding: .3rem;
+    padding: .3rem .5rem;
 }
 
 nav a:hover, .web-dev-list a:hover {
     transform: scale(1.1);
     color: var(--secondary-text-color);
     background-color: var(--header-background-color);
-    text-decoration: wavy;
 }
 
 /* =========================================================
@@ -164,6 +163,14 @@ main {
 
 /* --- Cards --- */
 
+.card {
+    border: 1.5px solid navy;
+    gap: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
 .card-1 {
     grid-column: 1 / 2;
 }
@@ -171,14 +178,6 @@ main {
 .card-2 {
     grid-column: 2 / 3;
     background-color: var(--secondary-background-color);
-}
-
-.card {
-    border: 1.5px solid navy;
-    gap: 1rem;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
 }
 
 .card h2 {
@@ -190,6 +189,7 @@ main {
 }
 
 /* Mobile layout */
+
 @media (max-width: 700px) {
   main {
     grid-template-columns: 1fr;
