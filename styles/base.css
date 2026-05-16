@@ -39,22 +39,8 @@ a:link {
     font-weight: 700;
 }
 
-header, footer {
+header{
     background-color: var(--header-background-color);
-}
-
-nav a, .web-dev-list a {
-    display: inline-block;
-    transition: transform 0.2s ease, color 0.2s ease;
-    border-radius: 3px;
-    padding: .3rem;
-}
-
-nav a:hover, .web-dev-list a:hover {
-    transform: scale(1.1);
-    color: var(--secondary-text-color);
-    background-color: var(--header-background-color);
-    text-decoration: wavy;
 }
 
 h1 {
@@ -87,6 +73,20 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+nav a, .web-dev-list a {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    border-radius: 3px;
+    padding: .3rem;
+}
+
+nav a:hover, .web-dev-list a:hover {
+    transform: scale(1.1);
+    color: var(--secondary-text-color);
+    background-color: var(--header-background-color);
+    text-decoration: wavy;
 }
 
 /* =========================================================
@@ -208,6 +208,7 @@ main {
    ========================================================= */
 
 footer {
+    background-color: var(--header-background-color);
     color: var(--secondary-text-color);
     text-align: center;
     padding: 1rem 0;
