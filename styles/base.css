@@ -173,8 +173,7 @@ main {
     background-color: var(--secondary-background-color);
 }
 
-.card-1,
-.card-2 {
+.card {
     border: 1.5px solid navy;
     gap: 1rem;
     overflow: hidden;
@@ -182,8 +181,7 @@ main {
     box-shadow: 5px 5px 5px grey;
 }
 
-.card-1 h2,
-.card-2 h2 {
+.card h2 {
     padding: .5rem;
     text-align: center;
     border-bottom: solid navy .1em;
