@@ -49,12 +49,15 @@ header, footer {
 }
 .header-nav-list a, .card-nav-list a {
     display: inline-block;
-    transition: transform 0.1s ease, color 0.1s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+    border-radius: 3px;
+    padding: .3rem;
 }
 
 .header-nav-list a:hover, .card-nav-list a:hover {
     transform: scale(1.1);
     color: var(--secondary-text-color);
+    background-color: var(--header-background-color);
 }
 
 h1 {
