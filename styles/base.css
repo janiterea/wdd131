@@ -22,7 +22,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 ul {
@@ -57,6 +58,7 @@ h1 {
     text-align: center;
     color: var(--primary-text-color);
     padding: 1rem;
+    font-weight: 700;
 }
 
 /* =========================================================
