@@ -42,17 +42,19 @@ a:link {
 header, footer {
     background-color: var(--header-background-color);
 }
-.header-nav-list a, .card-nav-list a {
+
+nav a, .web-dev-list a {
     display: inline-block;
     transition: transform 0.2s ease, color 0.2s ease;
     border-radius: 3px;
     padding: .3rem;
 }
 
-.header-nav-list a:hover, .card-nav-list a:hover {
+nav a:hover, .web-dev-list a:hover {
     transform: scale(1.1);
     color: var(--secondary-text-color);
     background-color: var(--header-background-color);
+    text-decoration: wavy;
 }
 
 h1 {
@@ -67,22 +69,6 @@ h1 {
    3. HEADER LAYOUT & COMPONENTS
    ========================================================= */
 
-.card-nav {
-    padding: 1rem;
-    height: 50%;
-}
-
-.card-nav-list {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.card-nav-list a:hover {
-    text-decoration: wavy;
-}
-
 #course-title {
     display: block;
     text-align: center;
@@ -92,18 +78,32 @@ h1 {
     font-weight: 700;
 }
 
-.header-nav {
+nav {
     padding: 1rem;
     background-color: var(--secondary-background-color);
 }
 
-.header-nav-list {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/* --- About Me Section --- */
+/* =========================================================
+   4. MAIN LAYOUT & COMPONENTS
+   ========================================================= */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .5rem;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 .5rem 1rem;
+    margin: 0 auto;
+}
+
+/* --- About Me --- */
 
 .about-me {
     display: grid;
@@ -119,7 +119,7 @@ h1 {
     padding: 1rem 1rem 1rem .5rem;
 }
 
-/* --- About Western Australia Section --- */
+/* --- About Western Australia --- */
 
 .about-western-australia {
     display: grid;
@@ -152,18 +152,14 @@ h1 {
     padding: 1rem 1rem 1rem .5rem;
 }
 
-/* =========================================================
-   4. MAIN LAYOUT & COMPONENTS
-   ========================================================= */
+/* --- Web Dev Resources --- */
 
-.main-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: .5rem;
-    max-width: 800px;
-    width: 100%;
-    padding: 0 .5rem 1rem;
-    margin: 0 auto;
+.web-dev-list {
+    padding: 1rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* --- Cards --- */
@@ -197,7 +193,7 @@ h1 {
 
 /* Mobile layout */
 @media (max-width: 700px) {
-  .main-grid {
+  main {
     grid-template-columns: 1fr;
   }
 
