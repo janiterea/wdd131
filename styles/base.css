@@ -211,8 +211,13 @@ h1 {
    5. FOOTER
    ========================================================= */
 
-   footer {
+footer {
     color: var(--secondary-text-color);
     text-align: center;
     padding: 1rem 0;
+}
+
+.last-modified {
+    color: yellow;
+    font-size: .9rem;
 }
