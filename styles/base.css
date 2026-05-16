@@ -90,13 +90,13 @@ header {
 }
 
 .about-me p {
-    padding: 1rem;
+    padding: 1rem .5rem 1rem 1rem;
 }
 
 .about-me img {
     width: 125px;
     height: auto;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem .5rem;
 }
 
 /* --- About Western Australia Section --- */
@@ -113,7 +113,7 @@ header {
 
 .about-western-australia img {
     grid-column: 1 / 3;
-    padding: 1rem 1rem .5rem 1rem;
+    padding: 1rem .5rem .5rem 1rem;
 }
 
 .about-western-australia h3 {
@@ -128,7 +128,7 @@ header {
 .about-western-australia p {
     grid-column: 2 / 3;
     grid-row: 2;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem .5rem;
 }
 
 /* =========================================================
