@@ -44,7 +44,7 @@ a:visited {
 
 .header-nav-list a, .card-nav-list a {
     display: inline-block;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .header-nav-list a:hover, .card-nav-list a:hover {
@@ -189,7 +189,7 @@ header {
     gap: 1rem;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px lightslategray;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .card-1 h2,
