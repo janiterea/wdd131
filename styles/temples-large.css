@@ -1,0 +1,21 @@
+@media (min-width: 450px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 650px) {
+    main { grid-template-columns: repeat(3, 1fr); }
+    #menu-button { display: none; }
+    #header-title { display: block; }
+    #nav-menu { display: block; }
+    #nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+}

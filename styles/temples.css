@@ -1,0 +1,119 @@
+:root {
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --header-background-color: navy;
+    --main-background-color: white;
+    --footer-background-color: navy;
+    --secondary-background-color: skyblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+header {
+    background-color: var(--header-background-color);
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+}
+
+header.open #header-title {
+    display: none;
+}
+
+#header-title {
+    padding: 1.5rem;
+    color: var(--secondary-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    width: 100%;
+}
+
+nav.open {
+    display: block;
+    width: 100%;
+}
+
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    border-radius: 3px;
+    padding: .3rem .5rem;
+    }
+
+    nav a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-background-color);
+    background-color: var(--header-background-color);
+    }
+
+main {
+    background-color: var(--main-background-color);
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    padding: .5rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--header-background-color);
+    color: var(--secondary-text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.last-modified {
+    color: yellow;
+    font-size: .9rem;
+}
