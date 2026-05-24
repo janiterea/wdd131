@@ -9,11 +9,11 @@
     #menu-button { display: none; }
     #header-title { 
         display: block; 
-        max-width: 500px;
+        max-width: 450px;
     }
     #nav-menu { 
         display: block; 
-        max-width: 500px;
+        max-width: 450px;
     }
     
     #nav-menu ul {
