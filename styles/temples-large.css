@@ -2,14 +2,20 @@
     main {
         grid-template-columns: repeat(2, 1fr);
     }
-    
 }
 
 @media (min-width: 650px) {
     main { grid-template-columns: repeat(3, 1fr); }
     #menu-button { display: none; }
-    #header-title { display: block; }
-    #nav-menu { display: block; }
+    #header-title { 
+        display: block; 
+        max-width: 500px;
+    }
+    #nav-menu { 
+        display: block; 
+        max-width: 500px;
+    }
+    
     #nav-menu ul {
         display: flex;
         flex-direction: row;
