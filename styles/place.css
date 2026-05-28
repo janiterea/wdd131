@@ -20,21 +20,20 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
     background-color: var(--header-background-color);
+    margin: 0;
+    padding: 1.5rem;
 }
 
 #header-title {
-    margin: 0;
-    padding: 1.5rem;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--secondary-text-color);
+    max-width: 1200px;
 }
 
-section {
+.data, .weather {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -58,13 +57,17 @@ table th:first-child {
     padding-right: .5rem;
 }
 
+td, th {
+    padding: .5rem 1rem;
+}
+
 hr {
     margin: 0 auto;
     width: 90%
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -83,22 +86,45 @@ footer {
 
 /*********** MEDIA QUERIES ***********/
 
-@media (max-width: 640px) {
+@media (min-width: 375px) {
+    
+} 
+
+@media (min-width: 900px) {
     main {
-        display: grid;
-        grid-template: 1 / 3;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-}
-
-@media (min-width: 641px) {
-    main {
-        display: block;
+    .data {
+        top: .5rem;
+        left: .5rem;
     }
-}
-
-@media (min-width: 641px) {
-    body {
-        background: red;
+    .weather {
+        bottom: .5rem;
+        right: .5rem;
     }
+    .data, .weather {
+        position: absolute;
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 400px;
+        border: 1px solid black;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    h2 {
+    text-align: center;
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    }
+    table {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+    td, th {
+    padding: .1rem .1rem;
 }
-
+} 
