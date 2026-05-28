@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Week 3 Project | About New Zealand</title>
+    <meta name="description" content="Responsive web page about New Zealand featuring an image, key facts, and the weather. Designed by Jacob'm Aniterea for WDD 131 Week 3 Project.">
+    <meta name="author" content="Jacob'm Aniterea">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="header-title">New Zealand</span>
+    </header>
+    <main>
+        <picture>
+            <source src="images/hero-desktop.webp" media="(min-width: 641px)">
+            <img src="images/hero-mobile.webp" alt="Skyline of Auckland City from a distance" width="600" height="960">
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>268,680 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>5,356,700</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Wellington</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>English, Maori</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>New Zealand Dollar</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC +12</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+64</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.nz</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2>Weather</h2>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>10 deg Celcius</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>5 km/h</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td>9.8 deg Celcius</td>
+                    </tr>
+                </table>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> | Jacob'm Aniterea | New Zealand</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

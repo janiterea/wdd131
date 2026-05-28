@@ -84,13 +84,13 @@ nav a {
     transition: transform 0.2s ease, color 0.2s ease;
     border-radius: 3px;
     padding: .3rem .5rem;
-    }
+}
 
-    nav a:hover {
+nav a:hover {
     transform: scale(1.1);
     color: navy;
     background-color: var(--main-background-color);
-    }
+}
 
 main {
     background-color: var(--main-background-color);
