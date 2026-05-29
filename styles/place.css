@@ -1,10 +1,10 @@
 :root {
     --primary-text-color: black;
-    --secondary-text-color: #E8FFE8;
-    --header-background-color: #228B22;
-    --main-background-color: white;
-    --footer-background-color: #228B22;
-    --secondary-background-color: skyblue;
+    --secondary-text-color: white;
+    --tertiary-text-color: #AEE7FF;
+    --primary-background-color: navy;
+    --secondary-background-color: rgba(255, 0, 0, 0.6);
+    --tertiary-background-color:rgba(255, 255, 255, 0.8);
 }
 
 * {
@@ -21,28 +21,25 @@ body {
 
 header {
     text-align: center;
-    background-color: var(--header-background-color);
-    margin: 0;
+    background-color: var(--primary-background-color);
+    margin: 0 auto;
     padding: 1.5rem;
+    max-width: 1200px;
 }
 
 #header-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--secondary-text-color);
     max-width: 1200px;
 }
 
-.data, .weather {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
 h2 {
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
     font-size: 2rem;
     font-weight: 600;
+    background-color: var(--secondary-background-color);
 }
 
 table {
@@ -61,70 +58,78 @@ td, th {
     padding: .5rem 1rem;
 }
 
-hr {
-    margin: 0 auto;
-    width: 90%
-}
-
 img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 footer {
-    background-color: var(--footer-background-color);
+    background-color: var(--primary-background-color);
     color: var(--secondary-text-color);
     text-align: center;
     padding: 1rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .last-modified {
-    color:#AEE7FF;
-    font-size: .9rem;
+    color:var(--tertiary-text-color);
+    font-size: 1rem;
 }
 
 /*********** MEDIA QUERIES ***********/
 
-@media (min-width: 375px) {
-    
-} 
-
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     main {
         position: relative;
         max-width: 1200px;
+        height: auto;
         margin: 0 auto;
     }
     .data {
-        top: .5rem;
-        left: .5rem;
+        top: 1.5rem;
+        left: 1.5rem;
     }
     .weather {
-        bottom: .5rem;
-        right: .5rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
     .data, .weather {
         position: absolute;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 0;
+        padding: 0;
         max-width: 400px;
-        border: 1px solid black;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: var(--tertiary-background-color);
+    }
+    .weather h2 {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    .weather h2::after {
+        content: "🌦️";
     }
     h2 {
-    text-align: center;
-    padding: .5rem;
+    text-align: left;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
+    background-color: var(--secondary-background-color);
     }
     table {
-        width: 100%;
+        min-width: 300px;
         max-width: 640px;
         margin: 0 auto;
+        padding: 0 0 1rem;
         table-layout: fixed;
     }
     td, th {
     padding: .1rem .1rem;
-}
+    }
+    hr {
+        display: none;
+    }
 } 
