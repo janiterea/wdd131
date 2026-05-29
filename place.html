@@ -18,7 +18,7 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/hero-desktop.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-desktop.webp" media="(min-width: 870px)">
             <img src="images/hero-mobile.webp" alt="Skyline of Auckland City from a distance" width="640" height="900">
         </picture>
         <section class="data">
@@ -60,10 +60,11 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="">
                 <table>
                     <tr>
                         <th>Temperature:</th>
-                        <td>10 deg Celcius</td>
+                        <td>10 °C</td>
                     </tr>
                     <tr>
                         <th>Conditions:</th>
@@ -71,11 +72,11 @@
                     </tr>
                     <tr>
                         <th>Wind:</th>
-                        <td>5 km/h</td>
+                        <td>5.2 km/h</td>
                     </tr>
                     <tr>
                         <th>Wind Chill:</th>
-                        <td>9.8 deg Celcius</td>
+                        <td id="windChill"></td>
                     </tr>
                 </table>
         </section>
