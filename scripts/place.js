@@ -13,7 +13,7 @@ function calculateWindChill(temp, wind) {
 let windChill;
 
 if (temperature <= 10 && windSpeed > 4.8) {
-    windChill = `${calculateWindChill(temperature, windSpeed).toFixed(1)}°C`;
+    windChill = `${calculateWindChill(temperature, windSpeed).toFixed(1)} °C`;
 } else {
     windChill = "N/A";
 }
