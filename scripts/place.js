@@ -21,5 +21,3 @@ if (temperature <= 10 && windSpeed > 4.8) {
 console.log(windChill);
 
 document.querySelector("#windChill").textContent = windChill;
-
-
