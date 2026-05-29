@@ -1,5 +1,5 @@
 :root {
-    --primary-text-color: black;
+    --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
     --tertiary-text-color: #AEE7FF;
     --primary-background-color: #00205B;
@@ -90,7 +90,7 @@ footer {
 }
 
 .last-modified {
-    color:var(--tertiary-text-color);
+    color: var(--tertiary-text-color);
     font-size: 1rem;
 }
 
