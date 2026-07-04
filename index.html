@@ -4,12 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jacob'm Aniterea</title>
+    <meta name="description"
+      content="Jacob'm Aniterea | WDD131 - Dynamic Web Fundamentals. About me, my interest, my country, and links to some useful web developer resources.">
+    <meta name="author" content="Jacob'm Aniterea">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Jacob Aniterea</h1>
-    <p>Welcome to my WDD 131 class website! This site is designed to showcase my work and projects throughout the course. Feel free to explore and learn more about what I've been working on.</p>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Jacob'm Aniterea</h1>
+        <section class="card card-1">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>My name is Jacob'm Aniterea. I was born in the Cook Islands, raised in New Zealand, and now live in Australia. I've always loved computers and technology, and my goal is to work for a tech company where I can build and create meaningful software. Outside of my studies, I enjoy sports, music, and spending time with my family and friends. These things keep me grounded and balanced while I work toward my future in tech.</p>
+                <img src="images/profile-photo.webp" alt="Profile photo of Jacob'm Aniterea">
+            </div>
+            <div class="about-new-zealand">
+                <h3>New Zealand</h3>
+                <p>New Zealand is a beautiful and laid-back country with a mix of mountains, beaches, forests, and farmland. The culture is warm and welcoming, shaped by Māori traditions and everyday Kiwi life. People love the outdoors, the community vibe, and the easygoing lifestyle. Whether it’s the scenery or the friendly locals, New Zealand leaves a strong impression on anyone who spends time there.</p>
+                <figure>
+                    <img src="images/new-zealand-flag.webp" alt="Flag of New Zealand">
+                    <figcaption>Flag of New Zealand</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="card card-2">
+            <h2>Web Dev Resources</h2>
+            <ul class="web-dev-resources">
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> | Jacob'm Aniterea | New Zealand</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
