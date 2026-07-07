@@ -29,18 +29,18 @@ nav a {
 
 h1 {
     color: white;
-    padding: 1rem 1rem 50px;
+    padding: 1rem 2rem 50px;
 }
 
 main {
     grid-column: 1;
-    padding: .5rem 1rem;
+    padding: .5rem 2rem;
     background-color: rgb(173, 216, 230);
     height: 300px;
 }
 
 aside {
-    padding: 0 1rem;
+    padding: 0.5rem 2rem;
 }
 
 footer {
