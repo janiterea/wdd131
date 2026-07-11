@@ -10,7 +10,7 @@ button.addEventListener('click', function() {
         const li = document.createElement('li');
         li.textContent = input.value;
         // create a button and add a click event listener
-        const deleteButton = document.createElement('button')
+        const deleteButton = document.createElement('button');
         deleteButton.textContent = '❌';
         deleteButton.addEventListener('click', function () {
             list.removeChild(li);
