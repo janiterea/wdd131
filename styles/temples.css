@@ -1,0 +1,132 @@
+:root {
+    --primary-text-color: navy;
+    --secondary-text-color: white;
+    --tertiary-text-color: yellow;
+    --primary-background-color: navy;
+    --secondary-background-color: white;
+    --tertiary-background-color: skyblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+header {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+}
+
+#header-title {
+    padding: 1.5rem;
+    color: var(--secondary-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.hide-title {
+    display: none;
+}
+
+#menu-button {
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    padding-top: 1rem;
+}
+
+nav {
+    display: none;
+    width: 100%;
+}
+
+nav.open {
+    display: block;
+    width: 100%;
+}
+
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    border-radius: 3px;
+    padding: .3rem .5rem;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: var(--primary-background-color);
+    background-color: var(--secondary-background-color);
+}
+
+main {
+    background-color: var(--secondary-background-color);
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    padding: .5rem;
+    text-align: center;
+    grid-column: 1 / -1;
+    color: var(--primary-text-color);
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.last-modified {
+    color: yellow;
+    font-size: .9rem;
+}
+
